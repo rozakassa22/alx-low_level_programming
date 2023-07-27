@@ -1,0 +1,36 @@
+#!/bin/bash
+echo "#lfndef MAIN_H" >main.h
+echo "#define MAIN_H" >>main.h
+echo "" >>main.h
+echo "void print_alphabet(void);" >>main.h
+echo "void print_alphabet_x10(void);" >>main.h
+echo "int _islower (int c);" >>main.h
+echo "int _isalpha(int c);" >>main.h
+echo "int print_sign(int n);" >>main.h
+echo "int _abs(int);" >>main.h
+echo "int print_last_digit(int);" >>main.h
+echo "void jack_bauer (void);" >>main.h
+echo "void times_table(void);" >>main.h
+echo "int add(int, int);" >>main.h
+echo "void print_to_98(int n);" >>main.h
+echo -e "\n" >>main.h
+echo "#endif" >>main.h
+echo "#include <stdlib.h>" >0-putchar.c
+echo "#include <stdlib.h>" >1-alphabet.c
+echo "#include <stdlib.h>" >2-print_alphabet_x10.c
+echo "#include <stdlib.h>" >3-islower.c
+echo "#include <stdlib.h>" >4-isalpha.c
+echo "#include <stdlib.h>" >5-sign.c
+echo "#include <stdlib.h>" >6-abs.c
+echo "#include <stdlib.h>" >7-print_last_digit.c
+echo "#include <stdlib.h>" >8-24_hours.c
+echo "#include <stdlib.h>" >9-times_table.c
+echo "#include <stdlib.h>" >10-add.c
+echo "#include <stdlib.h>" >11-print_to_98.c
+echo "#include <stdlib.h>" >100-times_table.c
+echo "#include <stdlib.h>" >101-natural.c
+echo "#include <stdlib.h>" >102-fibonacci.c
+echo "#include <stdlib.h>" >103-fibonacci.c
+echo "#include <stdlib.h>" >104-fibonacci.c
+chmod u+x 0-putchar.c 1-alphabet.c 2-print_alphabet_x10.c 3-islower.c 4-isalpha.c 5-sign.c 6-abs.c 7-print_last_digit.c 8-24_hours.c 9-times_table.c    
+chmod u+x 10-add.c 11-print_to_98.c 100-times_table.c 101-natural.c 102-fibonacci.c 103-fibonacci.c 104-fibonacci.c

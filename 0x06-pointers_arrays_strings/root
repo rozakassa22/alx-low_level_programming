@@ -1,0 +1,33 @@
+#!/bin/bash
+echo "#ifndef MAIN_H" >main.h
+echo "#define MAIN_H" >>main.h
+echo "" >>main.h
+echo "char *_strcat(char *dest, char *src);" >>main.h
+echo "char *_strncat(char *dest, char *src, int n);" >>main.h
+echo "char *_strncpy(char *dest, char *src, int n);" >>main.h
+echo "int _strcmp(char *s1, char *s2);" >>main.h
+echo "void reverse_array(int *a, int n);" >>main.h
+echo "char *string_toupper(char *);" >>main.h
+echo "char *cap_string(char *);" >>main.h
+echo "char *leet(char *);" >>main.h
+echo "char *rot13(char *);" >>main.h
+echo "void print_number(int n);" >>main.h
+echo "char *infinite_add(char *n1, char *n2, char *r, int size_r);" >>main.h
+echo "void print_buffer(char *b, int size);" >>main.h
+echo "" >>main.h
+echo "#endif" >>main.h
+echo "#include <stdlib.h>" >0-strcat.c
+echo "#include <stdlib.h>" >1-strncat.c
+echo "#include <stdlib.h>" >2-strncpy.c
+echo "#include <stdlib.h>" >3-strcmp.c
+echo "#include <stdlib.h>" >4-rev_array.c
+echo "#include <stdlib.h>" >5-string_toupper.c
+echo "#include <stdlib.h>" >6-cap_string.c
+echo "#include <stdlib.h>" >7-leet.c
+echo "#include <stdlib.h>" >100-rot13.c
+echo "#include <stdlib.h>" >101-print_number.c
+echo "#include <stdlib.h>" >102-magic.c
+echo "#include <stdlib.h>" >103-infinite_add.c
+echo "#include <stdlib.h>" >104-print_buffer.c
+chmod u+x 0-strcat.c 1-strncat.c 2-strncpy.c 3-strcmp.c 4-rev_array.c 5-string_toupper.c 6-cap_string.c
+chmod u+x 7-leet.c 100-rot13.c 101-print_number.c 102-magic.c 103-infinite_add.c 104-print_buffer.c   

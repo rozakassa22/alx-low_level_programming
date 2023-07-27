@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "#include <stdlib.h>" >0-positive_or_negative.c 
+echo "#include <stdlib.h>" >1-last_digit.c
+echo "#include <stdlib.h>" >2-print_alphabet.c
+echo "#include <stdlib.h>" >3-print_alphabets.c
+echo "#include <stdlib.h>" >4-print_alphabt.c 
+echo "#include <stdlib.h>" >5-print_numbers.c
+echo "#include <stdlib.h>" >6-print_numberz.c 
+echo "#include <stdlib.h>" >7-print_tebahpla.c
+echo "#include <stdlib.h>" >8-print_base16.c
+echo "#include <stdlib.h>" >9-print_comb.c
+echo "#include <stdlib.h>" >101-print_comb4.c
+echo "#include <stdlib.h>" >102-print_comb5.c
+chmod u+x 0-positive_or_negative.c 1-last_digit.c 2-print_alphabet.c 3-print_alphabets.c 4-print_alphabt.c 102-print_comb5.c
+chmod u+x 5-print_numbers.c 6-print_numberz.c 7-print_tebahpla.c 8-print_base16.c 9-print_comb.c 101-print_comb4.c   
