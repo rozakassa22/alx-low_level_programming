@@ -1,0 +1,29 @@
+#!/bin/bash
+echo "#ifndef MAIN_H" >main.h
+echo "#define MAIN_H" >>main.h
+echo "" >>main.h
+echo "char *_memset(char *s, char b, unsigned int n);" >>main.h
+echo "char *_memcpy(char *dest, char *src, unsigned int n);" >>main.h
+echo "char *_strchr(char *s, char c);" >>main.h
+echo "unsigned int _strspn(char *s, char *accept);" >>main.h
+echo "char *_strpbrk(char *s, char *accept);" >>main.h
+echo "char *_strstr(char *haystack, char *needle);" >>main.h
+echo "void print_chessboard(char (*a)[8]);" >>main.h
+echo "void print_diagsums(int *a, int size);" >>main.h
+echo "void set_string(char **s, char *to);" >>main.h
+echo "int _putchar(char c);" >>main.h
+echo "" >>main.h
+echo "#endif" >>main.h
+echo "#include <stdlib.h>" >0-memset.c
+echo "#include <stdlib.h>" >1-memcpy.c
+echo "#include <stdlib.h>" >2-strchr.c
+echo "#include <stdlib.h>" >3-strspn.c
+echo "#include <stdlib.h>" >4-strpbrk.c
+echo "#include <stdlib.h>" >5-strstr.c
+echo "#include <stdlib.h>" >100-set_string.c
+echo "#include <stdlib.h>" >7-print_chessboard.c
+echo "#include <stdlib.h>" >8-print_diagsums.c
+echo "#include <stdlib.h>" >101-crackme_password
+echo "#include <stdlib.h>" >README.md
+chmod u+x 0-memset.c 1-memcpy.c 2-strchr.c 3-strspn.c 4-strpbrk.c 5-strstr.c 100-set_string.c  
+chmod u+x 7-print_chessboard.c 8-print_diagsums.c 101-crackme_password
