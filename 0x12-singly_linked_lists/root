@@ -1,0 +1,85 @@
+#!/bin/bash
+echo "#ifndef LISTS_H" >lists.h
+echo "#define LISTS_H" >>lists.h
+echo "" >>lists.h
+echo "#include <stdlib.h>" >>lists.h
+echo "/**" >>lists.h
+echo " * struct list_s - singly linked list" >>lists.h
+echo " * @str: string - (malloc'ed string)" >>lists.h
+echo " * @len: length of the string" >>lists.h
+echo " * @next: points to the next node" >>lists.h
+echo " *" >>lists.h
+echo " * Description: singly linked list node structure" >>lists.h
+echo " *              for Holberton project" >>lists.h
+echo " */" >>lists.h
+echo "typedef struct list_s" >>lists.h
+echo "{" >>lists.h
+echo "	char *str;" >>lists.h
+echo "	unsigned int len;" >>lists.h
+echo "	struct list_s *next;" >>lists.h
+echo "} list_t;" >>lists.h
+echo "" >>lists.h
+echo "size_t print_list(const list_t *h);" >>lists.h
+echo "size_t list_len(const list_t *h);" >>lists.h
+echo "list_t *add_node(list_t **head, const char *str);" >>lists.h
+echo "list_t *add_node_end(list_t **head, const char *str);" >>lists.h
+echo "void free_list(list_t *head);" >>lists.h
+echo "" >>lists.h
+echo "#endif" >>lists.h
+echo "#include <stdlib.h>" >0-print_list.c
+echo '#include "lists.h"' >>0-print_list.c
+echo "#include <stdio.h>" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "/**" >>0-print_list.c
+echo " * print_list - Prints all the elements of a list_t list." >>0-print_list.c
+echo " * @h: The list_t list." >>0-print_list.c
+echo " *" >>0-print_list.c
+echo " * Return: The number of nodes in h." >>0-print_list.c
+echo " */" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "size_t print_list(const list_t *h)" >>0-print_list.c
+echo "{" >>0-print_list.c
+echo "	size_t nodes = 0;" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "	while (h)" >>0-print_list.c
+echo "	{" >>0-print_list.c
+echo "		if (h->str == NULL)" >>0-print_list.c
+echo "			printf("[0] (nil)\n");" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "		else" >>0-print_list.c
+echo "			printf("[%d] %s\n", h->len, h->str);" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "		nodes++;" >>0-print_list.c
+echo "		h = h->next;" >>0-print_list.c
+echo "	}" >>0-print_list.c
+echo "" >>0-print_list.c
+echo "	return (nodes);" >>0-print_list.c
+echo "}" >>0-print_list.c
+echo '#include "lists.h"' >1-list_len.c 
+echo "" >>1-list_len.c
+echo "/**" >>1-list_len.c
+echo " * list_len - Finds the number of elements in" >>1-list_len.c
+echo " *            a linked list_t list." >>1-list_len.c
+echo " * @h: The linked list_t list." >>1-list_len.c
+echo " *" >>1-list_len.c
+echo " * Return: The number of elements in h." >>1-list_len.c
+echo " */" >>1-list_len.c
+echo "size_t list_len(const list_t *h)" >>1-list_len.c
+echo "{" >>1-list_len.c
+echo "	size_t elements = 0;" >>1-list_len.c
+echo "" >>1-list_len.c
+echo "	while (h)" >>1-list_len.c
+echo "	{" >>1-list_len.c
+echo "		elements++;" >>1-list_len.c
+echo "		h = h->next;" >>1-list_len.c
+echo "	}" >>1-list_len.c
+echo "" >>1-list_len.c
+echo "	return (elements);" >>1-list_len.c
+echo "}" >>1-list_len.c
+echo "#include <stdlib.h>" >2-add_node.c
+echo "#include <stdlib.h>" >3-add_node_end.c
+echo "#include <stdlib.h>" >4-free_list.c
+echo "#include <stdlib.h>" >100-first.c 
+echo "#include <stdlib.h>" >101-hello_holberton.asm
+echo "#include <stdlib.h>" >README.md
+chmod u+x 101-hello_holberton.asm 100-first.c 4-free_list.c 3-add_node_end.c 2-add_node.c 1-list_len.c 0-print_list.c
