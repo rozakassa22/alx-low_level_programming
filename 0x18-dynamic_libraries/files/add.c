@@ -3,12 +3,13 @@
 
 /**
  * add - afunction that adds
- * @a: first unt 
+ * @a: first unt
  * @b: second
  * Return: sum
  */
 
 int add(int a, int b){
 
-	return(a + b);
+        return(a + b);
 }
+   

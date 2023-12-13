@@ -3,7 +3,7 @@
 
 /**
  * sub - afunction tha tsubstract
- * @a: first unt 
+ * @a: first unt
  * @b: second
  * Return: subtraction
  */
